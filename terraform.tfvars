@@ -1,2 +1,2 @@
-ami_value = ["ami-004a0173a724e2261", "ami-0b8c6b923777519db"] #linux 2 for the first and ubuntu 22,04 for the second
+ami_value = ["ami-07c5ecd8498c59db5", "ami-04dd23e62ed049936"] #linux 2 for the first and ubuntu 22,04 for the second
 instance_type = ["t2-micro", "t2-medium"] # Use appropriate instance types for each OS
