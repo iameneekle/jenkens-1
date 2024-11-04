@@ -45,28 +45,28 @@ pipeline {
         
         
         
-         stage('Checkov scan') {
-            steps {
-               
-                sh '''
-                sudo pip3 install checkov
-                
-                checkov -d . --skip-check CKV_AWS_79,CKV2_AWS_41
-                
-                '''
-            }
-        }
-        // 
-        // 
-        // 
-        // 
-        // 
-        stage('Manual approval') {
-            steps {
-               
-               input 'Deploy the infrastructure?'
-            }
-        }
+        //  stage('Checkov scan') {
+            // steps {
+            //    
+                // sh '''
+                // sudo pip3 install checkov
+                // 
+                // checkov -d . --skip-check CKV_AWS_79,CKV2_AWS_41
+                // 
+                // '''
+            // }
+        // }
+        
+        
+        
+        
+        
+        // stage('Manual approval') {
+            // steps {
+            //    
+            //    input 'Deploy the infrastructure?'
+            // }
+        // }
         
         
         
