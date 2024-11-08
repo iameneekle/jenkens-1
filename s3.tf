@@ -1,8 +1,8 @@
-resource "aws_s3_bucket" "web-app2-faith-bucket" {
-  bucket = "web-app2-faith-bucket2"
+resource "aws_s3_bucket" "jenkins-1" {
+  bucket = "jenkins-1"
 
   tags = {
-    Name        = "web-app2-faith-bucket2"
+    Name        = "jenkins-1"
     Environment = "Dev"
   }
 }
